@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* DARK MODE */
+.dark body {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+}
+
+.app {
+  width: 100%;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(15px);
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* PROGRESS */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #00ffae;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* INPUT */
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ff7eb3;
+  color: white;
+  cursor: pointer;
+}
+
+/* TASK */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  background: rgba(255,255,255,0.15);
+  cursor: grab;
+}
+
+/* PRIORITY COLORS */
+.high { border-left: 5px solid red; }
+.medium { border-left: 5px solid orange; }
+.low { border-left: 5px solid green; }
+
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* EMPTY */
+#emptyMsg {
+  text-align: center;
+  opacity: 0.7;
+}
